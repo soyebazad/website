@@ -1,5 +1,82 @@
+:root {
+  --primary-color: #c4e811;
+  --accent-color: #09c9b9;
+  --text-color: #dd8812;
+  --link-color: #b3be50;
+  --backgroun-color: #ffffff;
+  --light-gray: #b919dd;
+  --gray: #ec19bf;
+  --dark-gray: #000000;
+}
+
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+
+body {
+  height: 100vh;
+  text-align: center;
+  background-color: var(--backgroun-color);
+  padding: 0.1rem;
+}
+
+.nav-content {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--text-color);
+  text-decoration: none;
+  gap: 0.625rem;
+}
+.logo-icon {
+  height: 5.875rem;
+  width: 1.938rem;
+}
+.logo-txt {
+  font-size: 2rem;
+  gap: 1.5rem;
+}
+.nav {
+  display: flex;
+  gap: 1.5rem;
+}
+.nav-link {
+  text-decoration: none;
+  color: #718096;
+  font-size: 1.125rem;
+  font-weight: 600;
+  transform: color 0.1s;
+}
+
+.nav-link:hover {
+  color: var(--link-color);
+}
+
+.contact-btn {
+  border: none;
+  border-radius: 0.375rem;
+  background-color: var(--primary-color);
+  color: var(--backgroun-color);
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 600;
+  transform: all 0.1s;
+}
+.contact-btn:hover {
+  background-color: #cb6a0a;
 }
